@@ -1,0 +1,209 @@
+.file-upload-container {
+  margin-bottom: 30px;
+}
+
+.file-upload-container h2 {
+  margin-bottom: 25px;
+  color: var(--text);
+  font-size: 1.8rem;
+  font-weight: 600;
+  transition: color 0.25s ease;
+}
+
+.upload-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.upload-section h3 {
+  margin-bottom: 15px;
+  color: var(--text);
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: color 0.25s ease;
+}
+
+.drop-zone {
+  border: none;
+  border-radius: var(--r-lg);
+  padding: 50px 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  background: var(--surface);
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-in);
+}
+
+.drop-zone:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-out);
+}
+
+.drop-zone.drag-active {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-out);
+}
+
+.drop-zone.has-file {
+  box-shadow: var(--shadow-out);
+}
+
+.upload-icon {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 2px;
+  transition: color 0.25s ease;
+}
+
+.drop-zone p {
+  margin: 8px 0;
+  color: var(--text);
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+.upload-hint {
+  font-size: 0.95rem;
+  color: var(--muted);
+  font-weight: 400;
+  transition: color 0.25s ease;
+}
+
+.file-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.file-icon {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 3px;
+  padding: 10px 20px;
+  background: var(--surface);
+  border-radius: 12px;
+  border: none;
+  box-shadow: var(--shadow-out-sm);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, color 0.25s ease;
+}
+
+.file-name {
+  font-weight: 600;
+  color: var(--text);
+  word-break: break-word;
+  max-width: 100%;
+  font-size: 1.05rem;
+  transition: color 0.25s ease;
+}
+
+.file-size {
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-weight: 400;
+  transition: color 0.25s ease;
+}
+
+.upload-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+/* Text Input Mode Styles */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.section-header h3 {
+  margin: 0;
+}
+
+.toggle-mode-btn {
+  background: var(--surface);
+  border: none;
+  padding: 8px 16px;
+  border-radius: var(--r-md);
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  color: var(--text);
+  box-shadow: var(--shadow-out-sm);
+}
+
+.toggle-mode-btn:hover {
+  box-shadow: var(--shadow-out);
+  transform: translateY(-1px);
+}
+
+.toggle-mode-btn:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-in);
+}
+
+.text-input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.data-text-input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid var(--muted);
+  border-radius: 8px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  resize: vertical;
+  min-height: 200px;
+  transition: border-color 0.2s;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow-in);
+}
+
+.data-text-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: var(--shadow-out-sm);
+}
+
+.data-text-input::placeholder {
+  color: var(--muted);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.text-input-hint {
+  background: var(--surface);
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: var(--muted);
+  border-left: 3px solid var(--accent);
+  box-shadow: var(--shadow-in);
+}
+
+.text-input-stats {
+  background: var(--surface);
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: var(--accent);
+  font-weight: 500;
+  box-shadow: var(--shadow-out-sm);
+}
